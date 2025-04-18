@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-image:linear-gradient(to right, #034f84,#92a8d1);
+}
+.container{
+    /* width:100%; */
+    width:500px;
+    background-color: white;
+    margin:auto;
+    margin-top:50px;
+    border-radius:7px;
+    padding:40px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+}
+.sec1{
+    font-size:1.1rem;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #edeef0;
+    border-radius:30px;
+}
+.val{
+    flex:1;
+    font-size:16px;
+    background-color: transparent;
+    border:none;
+    outline:none;
+    height:40px;
+    padding:12px;
+    border-radius:40px;
+}
+.add{
+    border:none;
+    outline:none;
+    width:80px;
+    color:white;
+    background-color: #034f84;
+    cursor:pointer;
+    height:40px;
+    padding:12px;
+    border-radius:40px;
+}
+.list li{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    list-style-type: none;
+    user-select: none;
+    font-size:17px;
+    padding:12px 10px 8px 10px;
+    position:relative;
+}
+ul li::before{
+    content:'';
+    display:inline-block;
+    width:17px;
+    height:17px;
+    color:black;
+    left:17px;
+    top:17px;
+    background-image: url("circle.svg");
+    background-size:cover;
+    background-position: center;
+}
+ul li.check::before{
+    width:22px;
+    height:22px;
+    background-image: url("icons8-right.svg");
+}
+ul li span{
+    position:absolute;
+    right:0;
+    padding:8px;
+    border-radius:50%;
+}
+ul li span:hover{
+    background-color: #edeef0;
+}
